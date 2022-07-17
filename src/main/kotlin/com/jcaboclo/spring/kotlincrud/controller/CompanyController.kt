@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class CompanyController(var companyService: CompanyService) {
 
-    @Operation(summary = "Cadastrar novas Companhias", description = "Returns 202 if successful")
+    @Operation(summary = "Cadastrar novas Companhias", description = "Retorna 200 em caso de sucesso")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200", description = "Companhia cadastrada com sucesso"),
@@ -28,7 +28,7 @@ class CompanyController(var companyService: CompanyService) {
         return companyService.saveCompany(company)
     }
 
-    @Operation(summary = "Rertornar a relação das Companhias cadastradas", description = "Returns 202 if successful")
+    @Operation(summary = "Rertornar a relação das Companhias cadastradas", description = "Retorna 200 em caso de sucesso")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200", description = "Lista de Companhias geradas com sucesso"),
@@ -41,7 +41,7 @@ class CompanyController(var companyService: CompanyService) {
         // return companyRepository.findAll().filter { it.name.equals("João Caboclo 2") }
     }
 
-    @Operation(summary = "Pesquisar Companhia por nome", description = "Returns 202 if successful")
+    @Operation(summary = "Pesquisar Companhia por nome", description = "Retorna 200 em caso de sucesso")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200", description = "Companhia encontrada"),
@@ -53,7 +53,7 @@ class CompanyController(var companyService: CompanyService) {
         return companyService.getCompanyByName(name)
     }
 
-    @Operation(summary = "Excluir uma Companhia", description = "Returns 202 if successful")
+    @Operation(summary = "Excluir uma Companhia", description = "Retorna 200 em caso de sucesso")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "200", description = "Exclusão realizada com sucesso"),
@@ -66,7 +66,7 @@ class CompanyController(var companyService: CompanyService) {
         return "Companhia Excluida"
     }
 
-    @Operation(summary = "Atualizar dados de uma Companhia", description = "Returns 202 if successful")
+    @Operation(summary = "Atualizar dados de uma Companhia", description = "Retorna 200 em caso de sucesso")
     @ApiResponses(
         value = [
             ApiResponse(responseCode = "202", description = "Dados atualizados com sucesso"),

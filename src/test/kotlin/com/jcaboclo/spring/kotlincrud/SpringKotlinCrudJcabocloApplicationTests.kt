@@ -46,7 +46,7 @@ class SpringKotlinCrudJcabocloApplicationTests() {
 	fun getCompanyByNameFailTest() {
 		var objCompany: Company? = null
 		mockMvc!!.perform(
-			get("/getCompanyByName/ze dias")
+			get("/getCompanyByName/ze dias não será encontrado")
 				.contentType("application/json")
 				.content(objectMapper!!.writeValueAsString(objCompany))
 		)
