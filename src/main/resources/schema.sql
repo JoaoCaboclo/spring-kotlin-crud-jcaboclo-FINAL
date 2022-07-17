@@ -1,0 +1,9 @@
+DROP TABLE tb_company;
+		CREATE TABLE IF NOT EXISTS tb_company (
+
+		  ID INT PRIMARY KEY AUTO_INCREMENT,
+		  name  VARCHAR(60)  NOT NULL  ,
+		  address  VARCHAR(120)  NOT NULL,
+
+		  CONSTRAINT Company_PK PRIMARY KEY(id)
+		);

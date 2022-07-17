@@ -1,0 +1,36 @@
+openapi: 3.0.1
+info:
+  title: Api do banco para autorizacao
+  version: 1.0.0
+servers:
+  - url: /v1
+paths:
+  '/saveCompany/':
+    post:
+      operationId: Incluir Empresa
+      summary: Cadastrar Companhia
+      description: Recurso para realizar uma transação
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/model/Company'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+        '400':
+          $ref: '#/components/responses/NaoAutorizado'
+components:
+  responses:
+    Ok:
+      description: Companhia cadastrada com sucesso
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AutorizacaoDTO'
+    NaoAutorizado:
+      description: Cadastro não realizado
+      content:
+        application/json:
+          schema:
+            $ref: '#/model/Company
