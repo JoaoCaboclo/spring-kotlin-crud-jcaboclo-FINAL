@@ -15,6 +15,21 @@ API REST desenvolvida com Spring Boot e KOTLIN
 
    6-Acompanha class de testes unitários 
 
+
+1-Os métodos poderão ser testados pelo Postman, pela própria documentação da api swagger/openapi
+  e pelas classes de testes do JUnit5
+
+2-link para consular a documentação do sistema no swagger:           
+   http://localhost:8080/swagger-ui/index.html#/
+
+3-link para abrir o banco H2 pelo browse 
+  http://localhost:8080/h2-console --  
+
+4-Os arqquivos de configuração e carga inicial de dados estão na pasta resources
+  schema.sql e data.sql
+
+5-GitHub:
+
 TECNOLOGIAS
 ===========
    1-Gradle
