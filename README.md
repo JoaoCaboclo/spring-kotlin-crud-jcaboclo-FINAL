@@ -8,8 +8,9 @@
 -Acompanha class de testes unitários 
 
 TECNOLOGIAS
-   Spring boot
-   Kotlin
+   Gradle
+   Spring boot  - versão 2.7.1  -  JavaVersion.VERSION_1_8
+   Kotlin -  kotlin-stdlib-jdk8
    JUNIT 5 e MOCKMVC
    SWAGGER
    H2
