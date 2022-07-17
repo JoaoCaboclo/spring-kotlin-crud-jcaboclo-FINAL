@@ -18,9 +18,17 @@ API REST desenvolvida com Spring Boot e KOTLIN
 TECNOLOGIAS
 ===========
    1-Gradle
+   
    2-Spring boot  - versão 2.7.1  -  JavaVersion.VERSION_1_8
+   
    3-Kotlin -  kotlin-stdlib-jdk8
+   
    4-JUNIT 5 e MOCKMVC
+   
    5-SWAGGER
+   
    6-Springdoc-openapi
+   
    7-H2
+
+'# spring-kotlin-crud-jcaboclo-
