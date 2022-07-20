@@ -7,7 +7,7 @@ interface CompanyService {
 
     fun saveCompany(@RequestBody company : Company) : Company
     fun getCompany():List<Company>
-    fun getCompanyByName(@PathVariable name : String): Company
+    fun getCompanyByName(@PathVariable name : String): Company?
     fun deleteCompany(@PathVariable id : Int) : String
     fun updateCompany(@PathVariable id : Int, @RequestBody company: Company) : Company
 
