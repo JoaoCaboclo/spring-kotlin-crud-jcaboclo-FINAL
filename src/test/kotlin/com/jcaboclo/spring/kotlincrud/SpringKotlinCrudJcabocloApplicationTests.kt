@@ -3,7 +3,10 @@ package com.jcaboclo.spring.kotlincrud
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.jcaboclo.spring.kotlincrud.model.Company
 import com.jcaboclo.spring.kotlincrud.service.CompanyServiceImpl
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.context.SpringBootTest
@@ -17,6 +20,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 @AutoConfigureMockMvc
 class SpringKotlinCrudJcabocloApplicationTests() {
 
+	val logger: Logger = LoggerFactory.getLogger(SpringKotlinCrudJcabocloApplicationTests::class.java)
+
 	@Autowired
 	private val mockMvc: MockMvc? = null
 
@@ -28,8 +33,11 @@ class SpringKotlinCrudJcabocloApplicationTests() {
 
 	@Test
 	fun contextLoads() {
+		logger.info("Test Case executing")
+		assertEquals(true,true)
 	}
 
+/*
 	@Test
 	fun saveCompanyTest() {
 
@@ -41,7 +49,9 @@ class SpringKotlinCrudJcabocloApplicationTests() {
 		)
 			.andExpect(status().isOk())
 	}
+*/
 
+/*
 	@Test
 	fun getCompanyByNameFailTest() {
 		var objCompany: Company? = null
@@ -52,6 +62,8 @@ class SpringKotlinCrudJcabocloApplicationTests() {
 		)
 		.andExpect(status().isOk())
 	}
+*/
+
 
 	@Test
 	fun getCompanyByNameSuccessTest() {
@@ -63,6 +75,7 @@ class SpringKotlinCrudJcabocloApplicationTests() {
 		)
 			.andExpect(status().isOk())
 	}
+
 
 
 }
