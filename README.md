@@ -47,3 +47,19 @@ TECNOLOGIAS
    7-H2
 
 '# spring-kotlin-crud-jcaboclo-
+
+
+DEVOPS
+======
+
+1-BAIXAR O JENKIS
+  https://blog.tiagopariz.com/jenkins-instalar-no-windows/
+  baixe o jenkins.war
+        execute o comando [  java -jar jenkins.war  ]
+
+2-Executando  o JENKINS para configurar a apiline de devops
+   http://localhost:8080/login?from=%2F
+
+3-Link para integração continua/devops no github
+    http://localhost:8080/job/spring-kotlin-crud-jcaboclo-continuosintegration-devops/
+ 
