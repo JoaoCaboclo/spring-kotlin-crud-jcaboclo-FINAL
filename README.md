@@ -9,7 +9,7 @@ API REST desenvolvida com Spring Boot e KOTLIN
 
    3-Estrutura do projeto padrão (Pacotes: model, repositório, controle, service ( interface e implementação )
 
-   4-Configurado para gerar a documentação SWAGGER - permitindo executar testes na API pelo SWAGGER
+   4-Configurado para gerar a documentação SWAGGER - permitindo executar testes na API pelo  SWAGGER
 
    5-Configurado para executar uma carga inicial de dados, criando a tabela e inserindo dados
 
