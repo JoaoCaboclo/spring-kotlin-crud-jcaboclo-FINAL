@@ -28,7 +28,6 @@ API REST desenvolvida com Spring Boot e KOTLIN
 4-Os arqquivos de configuração e carga inicial de dados estão na pasta resources
   schema.sql e data.sql
 
-5-GitHub:
 
 TECNOLOGIAS
 ===========
