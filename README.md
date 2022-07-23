@@ -45,7 +45,6 @@ TECNOLOGIAS
    
    7-H2
 
-'# spring-kotlin-crud-jcaboclo-
 
 
 DEVOPS
