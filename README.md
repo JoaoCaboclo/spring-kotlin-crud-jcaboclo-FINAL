@@ -13,7 +13,7 @@ API REST desenvolvida com Spring Boot e KOTLIN
 
    5-Configurado para executar uma carga inicial de dados, criando a tabela e inserindo dados
 
-   6-Acompanha class de testes unitários 
+   6-Acompanha class de testes unitários. 
 
 
 1-Os métodos poderão ser testados pelo Postman, pela própria documentação da api swagger/openapi
